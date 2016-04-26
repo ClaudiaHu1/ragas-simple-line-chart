@@ -1,14 +1,14 @@
-Px-Simple-Line-Chart
+Rasgas-Simple-Line-Chart
 -----------------------------------------------
 
 ## Overview
 
-Px-Simple-Line-Chart is a Predix Experience ('Px') component.
+Rasgas-Simple-Line-Chart is used only for APM Rasgas team's component.
 
 - <a href="http://pxc-demos.grc-apps.svc.ice.ge.com/bower_components/px-simple-line-chart/demo.html" target="_blank">Demo</a>
 - <a href="http://pxc-demos.grc-apps.svc.ice.ge.com/bower_components/px-simple-line-chart/index.html" target="_blank">API Docs</a>
 
-Use the Px-Simple-Line-Chart component to visualize a series of numeric values as a line chart. The series is represented by a thin blue line connecting a sequence of points, the position of each proportionally point representing a single coordinate value.
+Use the rasgas-Simple-Line-Chart component to visualize a series of numeric values as a line chart. The series is represented by a thin blue line connecting a sequence of points, the position of each proportionally point representing a single coordinate value.
 
 Optionally, a `threshold` value may be defined to draw a thin orange line horizontally at the y-axis point representing the value. By default a threshold label will be drawn in an axis bar on the left side of the chart. If a custom threshold label is necessary a string may also be passed to the component as `threshold-label`.
 
@@ -16,15 +16,13 @@ In addition, a `min` and `max` may be configured in order to scope the chart to 
 
 The `width` and `height` of the component are also configurable as well as the vertical columns and horizontal rows drawn in the background of the coordinate space.
 
-We recommend viewing the <a href="http://pxc-demos.grc-apps.svc.ice.ge.com/bower_components/px-simple-line-chart/demo.html" target="_blank">Demo</a> page to become aware of the configuration possibilities. We also recommend using the default settings as they are designed for proper performance.
-
 <hr />
 ## Usage
 
 Install the component to your project using bower
 
 ```
-bower install https://github.com/PredixDev/px-simple-line-chart.git --save
+bower install https://github.com/ClaudiaHu1/rasgas-simple-line-chart.git --save
 ```
 
 Include the component in your page as you would any other Polymer element by importing it in application's head:
@@ -45,9 +43,9 @@ Options are passed into the component as attributes on the element tag.
 Send your data to the component via the `line-data` attribute which defines the series data to be charted. It needs to be passed in as a multi-dimensional array containing one or more arrays of numeric value pairs.
 
 ```html
-<px-simple-line-chart
+<rasgas-simple-line-chart
     line-data="[ [1,2], [2,3], [3,4] ]">
-</px-simple-line-chart>
+</rasgas-simple-line-chart>
 ```
 
 
@@ -56,9 +54,9 @@ Send your data to the component via the `line-data` attribute which defines the 
 Use the `threshold` attribute to define a threshold value and draw a thin orange line across the chart at the y-axis position representing the threshold point.
 
 ```html
-<px-simple-line-chart
+<rasgas-simple-line-chart
     threshold="1.5">
-</px-simple-line-chart>
+</rasgas-simple-line-chart>
 ```
 
 
@@ -67,15 +65,15 @@ Use the `threshold` attribute to define a threshold value and draw a thin orange
 Use the `threshold-label` attribute to define custom text for your threshold label. Pass in the value as a string. Set the value to 'false' to remove the threshold label.
 
 ```html
-<px-simple-line-chart
+<rasgas-simple-line-chart
     ...
     threshold-label="Custom Label">
-</px-simple-line-chart>
+</rasgas-simple-line-chart>
 
-<px-simple-line-chart
+<rasgas-simple-line-chart
     ...
     threshold-label="false">
-</px-simple-line-chart>
+</rasgas-simple-line-chart>
 
 ```
 
@@ -85,11 +83,11 @@ Use the `threshold-label` attribute to define custom text for your threshold lab
 Use the `min` and/or `max` attribute to define a the upper and lower bounds of your
 
 ```html
-<px-simple-line-chart
+<rasgas-simple-line-chart
     ...
     min="1"
     max="2">
-</px-simple-line-chart>
+</rasgas-simple-line-chart>
 ```
 
 
@@ -98,15 +96,15 @@ Use the `min` and/or `max` attribute to define a the upper and lower bounds of y
 By default the values of your min and max will be used to render text labels to the axis bar on the left side of the chart. Pass in strings to the `min-label` and/or `max-label` attributes to define custom text for a chart's min and max labels. Set the value to 'false' to remove the either of the labels from the axis bar.
 
 ```html
-<px-simple-line-chart
+<rasgas-simple-line-chart
     ...
     threshold-label="Custom Label">
-</px-simple-line-chart>
+</rasgas-simple-line-chart>
 
-<px-simple-line-chart
+<rasgas-simple-line-chart
     ...
     threshold-label="false">
-</px-simple-line-chart>
+</rasgas-simple-line-chart>
 
 ```
 
@@ -115,11 +113,11 @@ By default the values of your min and max will be used to render text labels to 
 Set the `columns` and/or `rows` attributes to define the grid lines to be drawn in the background of the chart.
 
 ```html
-<px-simple-line-chart
+<rasgas-simple-line-chart
     ...
     columns="25"
     rows="10">
-</px-simple-line-chart>
+</rasgas-simple-line-chart>
 ```
 
 
@@ -128,11 +126,11 @@ Set the `columns` and/or `rows` attributes to define the grid lines to be drawn 
 Set the `width` and `height` attributes to define the target pixel width and height of the chart component. The default settings are 283 by 150.
 
 ```html
-<px-simple-line-chart
+<rasgas-simple-line-chart
     ...
     width="370"
     height="230">
-</px-simple-line-chart>
+</rasgas-simple-line-chart>
 ```
 
 ###### Automatic width and height for responsive layouts
@@ -140,11 +138,11 @@ Set the `width` and `height` attributes to define the target pixel width and hei
 Set the `width` and `height` attributes to "auto" and the chart will expand to fill it's containing element. *Note: The containing element must be a block-level element.*
 
 ```html
-<px-simple-line-chart
+<rasgas-simple-line-chart
     ...
     width="auto"
     height="auto">
-</px-simple-line-chart>
+</rasgas-simple-line-chart>
 ```
 
 
